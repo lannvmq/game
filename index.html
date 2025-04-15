@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Game</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div id="startScreen" class="popup">
+        <div class="popup-content">
+            <h2>Witam w grze!</h2>
+            <p>
+            Sterowanie odbywa się za pomocą strzałek na klawiaturze, pytania należy wybijać skokiem z kostek z symbolem pytajnika
+            </p>
+            <button onclick="startGame()">Start</button>
+        </div>
+    </div>
+    
+    <div id="endScreen" class="popup" style="display: none;">
+        <div class="popup-content">
+            <h2>Gratulacje!</h2>
+            <p>Ukończyłeś grę!</p>
+            <button onclick="restartGame()">Zagraj ponownie</button>
+        </div>
+    </div>
+
+    <div class="fon">
+        <img id="mario" src="mario.png" width="150px" height="150px">
+
+        <img id="block" class="block" src="pip.png" width="150px" height="150px">
+        <img id="block2" class="block" src="pip.png" width="150px" height="150px">
+        <img id="block3" class="block" src="pip.png" width="150px" height="150px">
+        <img id="block4" class="block" src="pip.png" width="150px" height="150px">
+
+        <img id="quest" src="rub2.png" width="170px" height="150px">
+        <img id="quest2" src="rub2.png" width="170px" height="150px">
+        <img id="quest3" src="rub2.png" width="170px" height="150px">
+        <img id="quest4" src="rub2.png" width="170px" height="150px">
+        <img id="quest5" src="rub2.png" width="170px" height="150px">
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
